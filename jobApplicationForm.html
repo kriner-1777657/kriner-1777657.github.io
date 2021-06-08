@@ -15,31 +15,33 @@
 		<legend>Account</legend>
 		<div class="field">
 			<label>Email:</label> 
-			<input type="text" name="email">
+			<input type="text" name="email" required>
 		</div>
 		<div class="field">
 			<label>Password:</label> 
-			<input type="password" name="password">
+			<input type="password" name="password" required>
 		</div>
 		<div class="field">
 			<label>Repeat Password:</label> 
-			<input type="password" name="password_r">
+			<input type="password" name="password_r" required>
 		</div>
+		<input type="submit" value="Submit">
+		<input type="reset">
 	</fieldset>
 
 	<fieldset>
 		<legend>Character Information</legend>
 		<div class="field">
 			<label>First:</label> 
-			<input type="text" name="first">
+			<input type="text" name="first" required>
 		</div>
 		<div class="field">
 			<label>Last:</label> 
-			<input type="text" name="last">
+			<input type="text" name="last" required>
 		</div>
 		<div class="field">
 			<label>Datacenter:</label> 
-			<select name="state">
+			<select id="datacenter" name="datacenter" required>
 				<option value="" selected="true">Choose a Datacenter</option>
 				<option value="AE">Aether</option>
 				<option value="PR">Primal</option>
@@ -48,7 +50,7 @@
 		</div>
 		<div class="field">
 			<label>World:</label>
-			<select name="state">
+			<select name="world" required>
 				<option value="" selected="true">Choose a World</option>
 				<option value="AD">Adamantoise</option>
 				<option value="CA">Cactuar</option>
@@ -80,10 +82,14 @@
 	</fieldset>
 
 	<fieldset>
-		<legend>Free Company Activities</legend>
+		<legend>Free Company Information</legend>
 		<div class="field">
 			<label>Free Company Name:</label> 
-			<input type="text" name="fc">
+			<input type="text" name="fc" required>
+		</div>
+		<div class="field">
+			<label for="fccolor">Select Free Company color:</label> 
+			<input type="color" id="fccolor" name="fccolor">
 		</div>
 		<div class="field">
 			<label>Would you like to detail your free company activities?</label> 
