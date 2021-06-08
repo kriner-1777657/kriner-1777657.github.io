@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FFXIV Free Company Application</title>
+</head>
+<body>
+
+<h2>FFXIV Free Company Application</h2>
+
+<form action="http://gclass.alexburner.com/formtest.php" method="post">
+
+	<fieldset>
+		<legend>Account</legend>
+		<div class="field">
+			<label>Email:</label> 
+			<input type="text" name="email">
+		</div>
+		<div class="field">
+			<label>Password:</label> 
+			<input type="password" name="password">
+		</div>
+		<div class="field">
+			<label>Repeat Password:</label> 
+			<input type="password" name="password_r">
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Character Information</legend>
+		<div class="field">
+			<label>First:</label> 
+			<input type="text" name="first">
+		</div>
+		<div class="field">
+			<label>Last:</label> 
+			<input type="text" name="last">
+		</div>
+		<div class="field">
+			<label>Datacenter:</label> 
+			<select name="state">
+				<option value="" selected="true">Choose a Datacenter</option>
+				<option value="AE">Aether</option>
+				<option value="PR">Primal</option>
+				<option value="CL">Crystal</option>
+			</select>
+		</div>
+		<div class="field">
+			<label>World:</label>
+			<select name="state">
+				<option value="" selected="true">Choose a World</option>
+				<option value="AD">Adamantoise</option>
+				<option value="CA">Cactuar</option>
+				<option value="FA">Faerie</option>
+				<option value="GI">Gilgamesh</option>
+				<option value="JE">Jenova</option>
+				<option value="MI">Midgardsormr</option>
+				<option value="SA">Sargatanas</option>
+				<option value="SI">Siren</option>
+				<option value="BE">Behemoth</option>
+				<option value="EX">Excalibur</option>
+				<option value="ED">Exodus</option>
+				<option value="FM">Famfrit</option>
+				<option value="HY">Hyperion</option>
+				<option value="LA">Lamia</option>
+				<option value="LE">Leviathan</option>
+				<option value="UL">Ultros</option>
+				<option value="BA">Balmung</option>
+				<option value="BR">Brynhildr</option>
+				<option value="CO">Coeurl</option>>
+				<option value="DI">Diabolos</option>
+				<option value="GO">Goblin</option>
+				<option value="MA">Malboro</option>
+				<option value="MT">Mateus</option>
+				<option value="ZA">Zalera</option>
+
+			</select>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Free Company Activities</legend>
+		<div class="field">
+			<label>Free Company Name:</label> 
+			<input type="text" name="fc">
+		</div>
+		<div class="field">
+			<label>Would you like to detail your free company activities?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>If so, please select the activities your free company would be interested in. (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="activity_rp" value="rp">Role-playing</li>
+				<li><input type="checkbox" name="activity_lv" value="leveling">Leveling</li>
+				<li><input type="checkbox" name="activity_ca" value="casual">Casual</li>
+				<li><input type="checkbox" name="activity_hc" value="hardcore">Hardcore</li>
+				<li><input type="checkbox" name="activity_dg" value="dungeons">Dungeons</li>
+				<li><input type="checkbox" name="activity_gd" value="guildhests">Guildhests</li>
+				<li><input type="checkbox" name="activity_tr" value="trials">Trials</li>
+				<li><input type="checkbox" name="activity_ra" value="raids">Raids</li>
+				<li><input type="checkbox" name="activity_pv" value="pvp">PvP</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Are you seeking any specific roles for new members?</label> 
+			<input type="radio" name="legal" value="yes">Yes
+			<input type="radio" name="legal" value="no">No
+		</div>
+		<div class="field">
+			<label>If so, please select the roles you are looking for. (check all that apply)</label>
+			<ul>
+				<li><input type="checkbox" name="role_tk" value="tank">Tank</li>
+				<li><input type="checkbox" name="role_hl" value="heal">Healer</li>
+				<li><input type="checkbox" name="role_dm" value="dps">DPS</li>
+				<li><input type="checkbox" name="role_cr" value="craft">Crafter</li>
+				<li><input type="checkbox" name="role_ga" value="gather">Gatherer</li>
+			</ul>
+		</div>
+		<div class="field">
+			<label>Free Company Active Hours</label>
+			<table>
+				<tr>
+					<td></td>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<th>From</th>
+					<td><input type="time" size="5" name="su_from"></td>
+					<td><input type="time" size="5" name="mo_from"></td>
+					<td><input type="time" size="5" name="tu_from"></td>
+					<td><input type="time" size="5" name="we_from"></td>
+					<td><input type="time" size="5" name="th_from"></td>
+					<td><input type="time" size="5" name="fr_from"></td>
+					<td><input type="time" size="5" name="sa_from"></td>
+				</tr>
+				<tr>
+					<th>Until</th>
+					<td><input type="time" size="5" name="su_until"></td>
+					<td><input type="time" size="5" name="mo_until"></td>
+					<td><input type="time" size="5" name="tu_until"></td>
+					<td><input type="time" size="5" name="we_until"></td>
+					<td><input type="time" size="5" name="th_until"></td>
+					<td><input type="time" size="5" name="fr_until"></td>
+					<td><input type="time" size="5" name="sa_until"></td>
+				</tr>
+			</table>
+		</div>
+	</fieldset>
+
+	<fieldset>
+		<legend>Personal Statement</legend>
+		<div class="field">
+			<label>Why is your free company unique?</label><br>
+			<textarea name="unique" rows="6" cols="60"></textarea>
+		</div>
+		<div class="field">
+			<label>Describe your goals for the future of this free company:</label><br>
+			<textarea name="goals" rows="6" cols="60"></textarea>
+		</div>
+	</fieldset>
+
+	<input type="submit" value="Submit form">
+
+</form>
+</body>
+</html>
